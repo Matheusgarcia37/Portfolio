@@ -45,16 +45,28 @@ html{
   transition: transform 1s;
 }
 
-.show-menu #line1 {
-  transform: rotate(45deg) translate(0.3rem, 0.45rem);
+.show-menu .line {
+  box-shadow: none;
+  background-color: black;
 }
+
+.show-menu #line1 {
+  transform: rotate(45deg);
+
+  position: absolute;
+}
+
+.show-menu #line3 {
+  transform: rotate(-45deg);
+
+  position: absolute;
+}
+
 .show-menu #line2 {
   opacity: 0;
   visibility: hidden;
 }
-.show-menu #line3 {
-  transform: rotate(-45deg) translate(0.3rem, -0.45rem);
-}
+
 
 .hamburguer span {
   position: absolute;
